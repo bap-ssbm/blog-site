@@ -1,0 +1,120 @@
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.container{
+    position: relative;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 15px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    background-color: #728173;
+    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+.navbar-nav  li a:hover {
+    color: #ffffff !important;
+}
+.navbar-nav  li a{
+    margin-left: 15px;
+}
+
+.footer-padding {
+	padding-bottom: 60px;
+}
+
+.footer {
+	
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+	background-color: #69806a;
+    margin-top: auto;
+}
+
+.footer p {
+	margin-top: 15px;
+	font-size: 13px;
+    color: #fff;
+}
+
+.mb-3{
+    margin-bottom: 16px;
+}
+
+.posthr{
+    border-width: 2px;
+    width: 300px;
+    color: #616868;
+    border-style: dashed none none;
+    margin-top: 15px;
+}
+
+form[action="/compose"]{
+    margin-top: 20px;
+}
+.footer>p>a{
+    color: white;
+    margin-left: 10px;
+}
+
+.contactme>a{
+    color: black;
+    margin: 5px;
+    font-size: 15px;
+}
+.aboutme{
+    text-align: center;
+    display: flex;
+    height: 60vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.aboutmeimg{
+    border-radius: 50%;
+    height: 150px;
+    margin: 0px auto;
+}
+
+.home{
+    margin: 5px auto 15px auto;
+    text-align: center;
+}
+
+.home>h1, .aboutme>h1{
+    font-family: 'Handlee', cursive;
+}
+
+.main-posts{
+    border: solid 1px #6168687e;
+    border-radius: 5px;
+    padding: 5px 13px;
+    margin-bottom: 10px;
+}
+.main-posts>h5{
+    font-style: italic;
+}
+
+.main-posts, .posts{
+    word-wrap: break-word;
+}
+
+
+
+/* .main-body{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 700px;
+} */

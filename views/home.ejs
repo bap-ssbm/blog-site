@@ -1,0 +1,31 @@
+<%- include("partials/header"); -%>
+    <div class="home">
+        <h1>Welcome!</h1>
+
+        <p>
+            This a simple blog website created to practice EJS programming with node.js, as well as mongoose and mongodb
+            <br>Go to the "make post" page to create a new post and it will show up on this homepage!
+        </p>
+        <hr>
+    </div>
+
+
+    <% newPosts.forEach(function(post){ %>
+        <div class="main-posts">
+            <h2>
+                <%= post.title %>
+            </h2>
+            <h5>
+                <%=post.date%>
+            </h5>
+
+            <p>
+                <%= _.truncate(post.body, {'length': 100,} )%>
+                    <a href=<%="/posts/" + post._id%>>Read More</a>
+            </p>
+            
+        </div>
+        <%})%>
+
+
+            <%- include("partials/footer"); -%>
